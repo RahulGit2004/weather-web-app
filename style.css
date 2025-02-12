@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a8e0f1, #6dd5ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container-md {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    
+}
+
+.input-box:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #357ab8;
+    transform: scale(1.05);
+}
+
+/* Weather Body */
+.weather-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-img {
+    max-width: 120px;
+    margin-right: 20px;
+}
+
+.weather-box {
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 50px;
+    font-weight: 800;
+    color: #2193b0;
+}
+
+.weather-body .description {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Weather Details */
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.weather-details .icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.weather-details .text {
+    color: #444;
+    font-size: 1.1rem;
+}
+
+/* Page Not Found */
+.page-not-found {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page-not-found h2 {
+    font-weight: 700;
+    color: rgb(160, 156, 156);
+    font-size: 1.5rem;
+}
+
+.page-not-found img {
+    width: 60%;
+    height: auto;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    .container-md {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .weather-box .temperature {
+        font-size: 40px;
+    }
+}
