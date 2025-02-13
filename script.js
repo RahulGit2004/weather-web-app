@@ -46,6 +46,10 @@ async function findWeather(city) {
 
         let tempK = weatherData.main.temp;
 
+        // Description
+        description.innerHTML = `${weatherData.weather[0].description}`
+        console.log(weatherData);
+
         // Update Temperature with Toggle
         temperature.innerHTML = `
             <span id="temp-value">${Math.round(tempK - 273.15)}</span> 
